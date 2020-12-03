@@ -1,0 +1,52 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .container {
+      height: 200px;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(2, 100px);
+    }
+  </style>
+</head>
+<body>
+  <h1>grid-column, grid-row</h1>
+  <h4>1つの要素をgrid-column-start: 2</h4>
+  <div class="container">
+    <div class="first" style="grid-column-start: 2">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+  </div>
+  <h4>1つめの要素をgrid-column-start: 2, grid-column-end: 4</h4>
+  <div class="container" style="align-content: start">
+    <div class="first" style="grid-column-start: 2; grid-column-end: 4">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+  </div>
+  <h4>1つめの要素をgrid-column-start: 2, grid-column-end: 5</h4>
+  <div class="container" style="align-content: start">
+    <div class="first" style="grid-column-start: 2; grid-column-end: 5">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+  </div>
+  <h4>1つめの要素をgrid-column-start: 2 span</h4>
+  <div class="container" style="align-content: start">
+    <div class="first" style="grid-column-start: 2 span">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+  </div>
+  <h4>1つめの要素をgrid-column-start: 2 span, grid-column-end: 4</h4>
+  <div class="container" style="align-content: start">
+    <div class="first" style="grid-column-start: 2 span; grid-column-end: 4">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+  </div>
+  <h4>1つめの要素をgrid-column-end: 4</h4>
+  <div class="container" style="align-content: start">
+    <div class="first" style="grid-column-end: 4">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+  </div>
+</body>
+</html>

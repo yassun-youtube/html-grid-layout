@@ -1,0 +1,52 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .container {
+      height: 200px;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(2, auto);
+    }
+  </style>
+</head>
+<body>
+  <h1>justify-content</h1>
+  <h4>start</h4>
+  <div class="container">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third" style="justify-self: start">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+  <h4>end</h4>
+  <div class="container">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third" style="justify-self: end">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+  <h4>center</h4>
+  <div class="container">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third" style="justify-self: center">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+  <h4>stretch(これだけ他の要素はstart)</h4>
+  <div class="container" style="justify-items: start">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third" style="justify-self: stretch">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+</body>
+</html>

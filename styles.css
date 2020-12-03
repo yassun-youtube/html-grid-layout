@@ -1,0 +1,35 @@
+body {
+  min-height: 100vh;
+}
+.container {
+  display: grid;
+  height: 100%;
+}
+.container > div {
+  padding: 12px;
+}
+
+.first {
+  background: #FFCDD2;
+}
+.second {
+  background: #BBDEFB;
+}
+.third {
+  background: #C8E6C9;
+}
+.fourth {
+  background: #E1BEE7;
+}
+.fifth {
+  background: #FFF9C4;
+}
+.sixth {
+  background: #C5CAE9;
+}
+.seventh {
+  background: #F5F5F5;
+}
+.eighth {
+  background: #F0F4C3;
+}

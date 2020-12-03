@@ -1,0 +1,68 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+      grid-template-columns: 42px 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(2, 100px);
+      grid-auto-rows: 42px;
+      grid-template-areas:
+        "side1 . . . ."
+        "side2 . . . ."
+        "side3 foot1 foot2 foot3 foot4";
+    }
+    .first,.second,.third,.fourth,.fifth,.sixth,.seventh,.eighth {
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+    }
+    .fifth,.sixth,.seventh,.eighth {
+      border-bottom: 1px solid black;
+    }
+    .fourth,.eighth {
+      border-right: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="grid-area: side1; display: flex; justify-content: flex-end; border-top: 1px solid black;">
+      <div style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>↑1</div>
+        <div>↓2</div>
+      </div>
+    </div>
+    <div style="grid-area: side2; display: flex; justify-content: flex-end; border-top: 1px solid black; border-bottom: 1px solid black;">
+      <div style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>↑2</div>
+        <div>↓3</div>
+      </div>
+    </div>
+    <div style="grid-area: foot1; display: flex; justify-content: space-between; border-left: 1px solid black;">
+      <div>←1</div>
+      <div>2→</div>
+    </div>
+    <div style="grid-area: foot2; display: flex; justify-content: space-between; border-left: 1px solid black;">
+      <div>←2</div>
+      <div>3→</div>
+    </div>
+    <div style="grid-area: foot3; display: flex; justify-content: space-between; border-left: 1px solid black;">
+      <div>←3</div>
+      <div>4→</div>
+    </div>
+    <div style="grid-area: foot4; display: flex; justify-content: space-between; border-left: 1px solid black; border-right: 1px solid black;">
+      <div>←4</div>
+      <div>5→</div>
+    </div>
+
+    <div class="first">first</div>
+    <div class="second">second</div>
+    <div class="third">third</div>
+    <div class="fourth">fourth</div>
+    <div class="fifth">fifth</div>
+    <div class="sixth">sixth</div>
+    <div class="seventh">seventh</div>
+    <div class="eighth">eighth desu</div>
+  </div>
+</body>
+</html>

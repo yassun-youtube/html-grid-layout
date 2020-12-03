@@ -1,0 +1,26 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+      height: auto;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "sidebar main main";
+    }
+  </style>
+</head>
+<body>
+  <h1>grid-template-areas</h1>
+  <h4>上は全部ヘッダ、左はサイドバー、それ以外はメイン</h4>
+  <div class="container" style="justify-content: center">
+    <div class="first" style="grid-area: header">grid-area: header</div>
+    <div class="second" style="grid-area: sidebar">grid-area: sidebar</div>
+    <div class="third" style="grid-area: main">grid-area: main</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+      height: auto;
+      grid-template-columns: repeat(3, 200px);
+      grid-template-rows: repeat(2, 100px);
+    }
+  </style>
+</head>
+<body>
+  <h1>grid-auto-flow</h1>
+  <h3>row</h3>
+  <div class="container" style="grid-auto-flow: row">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+
+  <h3>column</h3>
+  <div class="container" style="grid-auto-flow: column">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+
+  <h3>row (3をcolumn2にずらす)</h3>
+  <div class="container" style="grid-auto-flow: row">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third" style="grid-column: 2">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+
+  <h3>row dense (3をcolumn2にずらす)</h3>
+  <div class="container" style="grid-auto-flow: row dense">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third" style="grid-column: 2">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+
+  <h3>column (3をrow2にずらす)</h3>
+  <div class="container" style="grid-auto-flow: column">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third" style="grid-row: 2">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+
+  <h3>column dense (3をrow2にずらす)</h3>
+  <div class="container" style="grid-auto-flow: column dense">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third" style="grid-row: 2">3</div>
+    <div class="fourth">4</div>
+    <div class="fifth">5</div>
+    <div class="sixth">6</div>
+  </div>
+
+
+</body>
+</html>
